@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/* Versão Mobile First */
+
+@import url('https://fonts.googleapis.com/css2? family= DM+Serif+Display & family= Dosis:wght@300 & display=swap');
+
+@font-face {
+    font-family: 'DM';
+    src: url(../Fonts/DMSerifText-Regular.ttf);    
+}
+
+:root {
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-negrito: 'DM', serif;
+    --fonte-texto: 'Dosis', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background: #F3EBE4;
+    height: 100vh;
+    width: 100vw;
+}
+
+#color {
+     color: #608979;/* Cor do ultimo h1 */
+     margin: 10px 10px 10px 30px;
+     margin-bottom: 17px;
+}
+
+#color1 {
+    color: #608979; /* Cor do spam */
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;      
+}
+
+ 
+section#principal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 250px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.219);
+    overflow: hidden;
+}
+
+section#principal > div#img {
+    display: block;
+    background-image: url(../img/image-product-mobile.jpg);
+    background-size: cover;
+    background-position: left center;
+    height: 200px;    
+}
+
+/* Parágrafo 1P */
+#text1 {
+    font-family: var(--fonte-texto);
+    font-size: 12px;
+    color: #828b88;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+/* Parágrafo 2P */
+#text2 {
+    font-family: var(--fonte-texto);
+    font-size: 13px;
+    color: #828b88;
+    text-align: left;
+    line-height: 18px;
+}
+
+div.text > p, h1, p, h1 { 
+   display: block;
+   padding: 1px;  
+   margin: 18px;
+   font-size: 20px;
+}
+
+div#button {
+    text-align: center; 
+    margin: 15px;  
+}
+
+div#button > button {
+    width: 200px;
+    height: 30px;
+    border-radius: 6px;
+    background: #3D8168;
+    color: white;
+    border: none;
+}
